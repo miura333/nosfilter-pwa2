@@ -13,8 +13,7 @@ if ('serviceWorker' in navigator) {
 <body class="cameraBody">
     <video id="video" autoplay playsinline></video>
     <input id="btnPicture" type="button" disabled="true" value="Take Picture"></input>
-    <!-- <img id="image_png" src="#"> -->
-	<canvas id="imageCanvas" style="display:none;" width="300" height="300"></canvas>
+    <canvas id="imageCanvas" style="display:none;" width="300" height="300"></canvas>
     {!! Form::open(['url' => '/result', 'id' => 'formResult']) !!}
     {!! Form::hidden('imageData', null, ['id' => 'imagePost']) !!}
     {!! Form::close() !!}
@@ -36,12 +35,6 @@ if ('serviceWorker' in navigator) {
             height = this.videoHeight;
         }, false );
 
-        // $.ajaxSetup ({
-        //     headers: {
-        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //     }
-        // });
-
         function successCallback(stream) {
             video.srcObject = stream;
 
@@ -57,25 +50,6 @@ if ('serviceWorker' in navigator) {
 
                 $('#imagePost').val(img);
                 $('#formResult').submit();
-                // console.log(img);
-                // document.getElementById("image_png").src = img;
-                // $.ajax({
-                //     url:'/result',
-                //     type:'POST',
-                //     data:{
-                //         'imageData':img
-                //     }
-                // })
-                // .done( (data) => {
-                //     console.log('done');
-                //     console.log(data);
-                // })
-                // .fail( (data) => {
-                //     console.log('fail');
-                //     console.log(data);
-                // })
-                // .always( (data) => {
-                // });
     		};
         };
 
