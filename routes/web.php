@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/test', function () {
+    return view('test');
+});
+
 Route::post('result/', 'imageController@filter');
 Route::get('result/', 'imageController@filter');

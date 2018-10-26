@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
 <body class="cameraBody">
-    <img class="resultPreview" src="{{$imageData}}">
+    <img src="{{$imageData}}" width={{$width}} height={{$height}}>
 </body>
 @endsection
