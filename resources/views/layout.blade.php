@@ -11,7 +11,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
         <link rel="apple-touch-icon" href="./icon-120.png" sizes="120x120"/>
-        <link rel="apple-touch-icon" href="./icon-180.png" sizes="180x180"/>
+        <link rel="apple-touch-icon" href="./icon-152.png" sizes="152x152"/>
 
         <link href="/css/nosfilter-pwa.css" rel="stylesheet" type="text/css">
 

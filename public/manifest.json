@@ -3,8 +3,8 @@
     "short_name": "nosFilter",
     "background_color": "#ffffff",
     "icons": [{
-        "src": "./icon-180.png",
-        "sizes": "180x180",
+        "src": "./icon-152.png",
+        "sizes": "152x152",
         "type": "image/png"
     },{
         "src": "./icon-120.png",
