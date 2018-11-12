@@ -20,3 +20,63 @@ body {
     display: block;
     width: 100%;
 }
+
+.object-fit-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.appHeader {
+    width: 100%;
+    height: 44px;
+    background-color: #f7f7f7;
+}
+
+.appHeaderBorder {
+    width: 100%;
+    height: 1px;
+    background-color: #4f4f4f;
+}
+
+.appHeaderTitle {
+    position : absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 44px;
+    font-family:'Hiragino Kaku Gothic Pro','Meiryo';
+    font-size:18px;
+    font-weight:normal;
+    color:#4f4f4f;
+    text-align:center;
+    line-height: 44px;
+    vertical-align: middle;
+}
+
+.appHeaderBackButton {
+    position : absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 44px;
+    font-family:'Hiragino Kaku Gothic Pro','Meiryo';
+    font-size:18px;
+    font-weight:normal;
+    text-align:left;
+    line-height: 44px;
+    vertical-align: middle;
+}
+
+.linkBackButtonText {
+    text-decoration: none;
+}
+
+.downloadText {
+    font-family:'Hiragino Kaku Gothic Pro','Meiryo';
+    font-size:14px;
+    font-weight:normal;
+    color:#ffffff;
+    width: 100%;
+    text-align:center;
+}
