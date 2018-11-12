@@ -12,7 +12,12 @@ if ('serviceWorker' in navigator) {
 @section('content')
 <body class="cameraBody">
     <video id="video" autoplay playsinline></video>
-    <input id="btnPicture" type="button" disabled="true" value="Take Picture"></input>
+    <div class="cameraSpacer"></div>
+    <div class="cameraButtonParent">
+        <div class="cameraButtonParent2">
+            <input id="btnPicture" type="button" disabled="true" value="OK" class="cameraBtn"></input>
+        </div>
+    </div>
     <canvas id="imageCanvas" style="display:none;" width="300" height="300"></canvas>
     {!! Form::open(['url' => '/result', 'id' => 'formResult']) !!}
     {!! Form::hidden('imageData', null, ['id' => 'imagePost']) !!}

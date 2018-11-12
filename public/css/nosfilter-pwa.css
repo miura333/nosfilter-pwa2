@@ -16,6 +16,39 @@ body {
     width: 100%;
 }
 
+.cameraButtonParent {
+    width: 100%;
+    height: 60px;
+}
+
+.cameraButtonParent2 {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.cameraBtn{
+    display: inline-block;
+    text-decoration: none;
+    background: #ffffff;
+    color: rgba(79, 79, 79, 0.47);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #ffffff;
+    border: solid 2px rgba(79, 79, 79, 0.47);
+    transition: .4s;
+}
+
+.cameraSpacer {
+    width: 100%;
+    height: 5px;
+}
+
 .resultPreview {
     display: block;
     width: 100%;
