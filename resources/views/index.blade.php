@@ -49,7 +49,7 @@ if ('serviceWorker' in navigator) {
                 // canvas.width = 10;
                 // canvas.height = 10;
                 // canvas.getContext("2d").drawImage(video, 0, 0, 10, 10, 0, 0, 10, 10);
-    			var img = canvas.toDataURL("image/png");
+    			var img = canvas.toDataURL("image/jpeg");
                 // console.log(img);
 
                 $('#imagePost').val(img);

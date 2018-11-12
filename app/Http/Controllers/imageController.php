@@ -14,7 +14,7 @@ class imageController extends Controller
     {
         Log::debug('enter filter');
 
-        $img = str_replace('data:image/png;base64,', '', $request->imageData);
+        $img = str_replace('data:image/jpeg;base64,', '', $request->imageData);
         $img = str_replace(' ', '+', $img);
         $data = base64_decode($img);
         $timestamp = time();
@@ -25,7 +25,7 @@ class imageController extends Controller
         // $success = file_put_contents($file, $data);
         // Log::debug($success ? $file : 'Unable to save the file.');
 
-        $src = imagecreatefrompng('storage/'.$file);
+        $src = imagecreatefromjpeg('storage/'.$file);
 
         $imageWidth = imagesx($src);
         $imageHeight = imagesy($src);
@@ -85,7 +85,7 @@ class imageController extends Controller
         }
 
         $fileOut = $timestamp . "_out.png";
-        imagepng($resultImage, 'storage/'.$fileOut);
+        imagejpeg($resultImage, 'storage/'.$fileOut, 80);
 
         imagedestroy($resultImage);
         imagedestroy($resizedBase);
@@ -99,7 +99,7 @@ class imageController extends Controller
 
         unlink('storage/'.$fileOut);
 
-        return view('result')->with(['imageData' => 'data:image/png;base64,'.$imageData64, 'width' => $imageWidth, 'height' => $imageHeight]);
+        return view('result')->with(['imageData' => 'data:image/jpeg;base64,'.$imageData64, 'width' => $imageWidth, 'height' => $imageHeight]);
     }
 /*
     public function filter(Request $request)
