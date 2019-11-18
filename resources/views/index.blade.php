@@ -31,7 +31,8 @@ if ('serviceWorker' in navigator) {
         }},
         video  = document.getElementById("video");
 
-        navigator.getUserMedia(medias, successCallback, errorCallback);
+        // navigator.getUserMedia(medias, successCallback, errorCallback);
+        navigator.mediaDevices.getUserMedia(medias).then(successCallback).catch(errorCallback);
 
         var width = 0, height = 0;
 
